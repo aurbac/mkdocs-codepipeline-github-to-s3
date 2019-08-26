@@ -30,6 +30,11 @@
         "GitHubRepo": {
             "AllowedPattern": "[A-Za-z0-9-]+",
             "Type": "String"
+        },
+        "WebsiteDomain": {
+            "AllowedPattern": "^((?!-)[A-Za-z0-9-]{1,63}(?<!-)\\.)+[A-Za-z]{2,6}$",
+            "Default": "name.site.com",
+            "Type": "String"
         }
     },
     "Resources": {
@@ -534,6 +539,9 @@
         },
         "S3BucketWebsite": {
             "Properties": {
+                "BucketName": {
+                    "Ref": "WebsiteDomain"
+                },
                 "PublicAccessBlockConfiguration": {
                     "BlockPublicAcls": "false",
                     "BlockPublicPolicy": "true",
