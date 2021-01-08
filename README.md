@@ -83,7 +83,7 @@ Download the CloudFormation template [AURBAC-mkdocs-codepipeline-github-to-s3.js
 * GitHubBranch
 * GitHubOwner (Github User)
 * GitHubOAuthToken
-* WebsiteDomain
+* WebsiteDomain (Bucket name)
 
 Wait until stack status is **CREATE_COMPLETE** and go to the AWS CodePipeline console, automatically the pipeline release a change and deploy to your Amazon S3 Bucket.
 

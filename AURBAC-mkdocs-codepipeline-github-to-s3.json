@@ -14,27 +14,32 @@
         "GitHubBranch": {
             "AllowedPattern": "[A-Za-z0-9-]+",
             "Default": "master",
-            "Type": "String"
+            "Type": "String",
+            "Description" : "Github branch"
         },
         "GitHubOAuthToken": {
             "AllowedPattern": "[a-z0-9]*",
             "MaxLength": 40,
             "MinLength": 40,
             "NoEcho": true,
-            "Type": "String"
+            "Type": "String",
+            "Description" : "Github OAuth Token, personal access token"
         },
         "GitHubOwner": {
             "AllowedPattern": "[A-Za-z0-9-]+",
-            "Type": "String"
+            "Type": "String",
+            "Description" : "Github user"
         },
         "GitHubRepo": {
             "AllowedPattern": "[A-Za-z0-9-]+",
-            "Type": "String"
+            "Type": "String",
+            "Description" : "Repository name"
         },
         "WebsiteDomain": {
             "AllowedPattern": "^((?!-)[A-Za-z0-9-]{1,63}(?<!-)\\.)+[A-Za-z]{2,6}$",
             "Default": "name.site.com",
-            "Type": "String"
+            "Type": "String",
+            "Description" : "Bucket name"
         }
     },
     "Resources": {
