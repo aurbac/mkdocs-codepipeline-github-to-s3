@@ -77,7 +77,13 @@ Now create a new GitHub repository for your mkdocs project and push the changes.
 
 ## Create the CodePipeline to deploy changes automatically to your Amazon S3 Website
 
-Download the CloudFormation template [AURBAC-mkdocs-codepipeline-github-to-s3.json](AURBAC-mkdocs-codepipeline-github-to-s3.json) and launch in your selected region to create the AWS CodePipeline and an Amazon S3 Bucket for your WebSite.
+Download the CloudFormation template [AURBAC-mkdocs-codepipeline-github-to-s3.json](AURBAC-mkdocs-codepipeline-github-to-s3.json) and launch in your selected region to create the AWS CodePipeline and an Amazon S3 Bucket for your WebSite, specify the following values:
+
+* GitHubRepo (Repository name)
+* GitHubBranch
+* GitHubOwner (Github User)
+* GitHubOAuthToken
+* WebsiteDomain
 
 Wait until stack status is **CREATE_COMPLETE** and go to the AWS CodePipeline console, automatically the pipeline release a change and deploy to your Amazon S3 Bucket.
 
