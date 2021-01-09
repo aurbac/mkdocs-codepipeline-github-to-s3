@@ -1,4 +1,4 @@
-# AWS CodePipeline to Deploy Mkdocs project from GitHub to Amazon S3 Bucket
+# AWS CodePipeline to Deploy MkDocs project from GitHub to Amazon S3 Bucket
 
 ![Diagram](images/diagram.png)
 
@@ -12,7 +12,7 @@ You need a personal access token for GitHub and must have the following scopes.
 
 https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line
 
-## Create you first Mkdocs project
+## Create your first MkDocs project
 
 Install the [MkDocs](https://www.mkdocs.org/) and [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) design package using pip.
 
@@ -21,7 +21,7 @@ sudo pip install mkdocs
 sudo pip install mkdocs-material
 ```
 
-Create the new Mkdocs project.
+Create the new MkDocs project.
 
 ``` bash
 mkdocs new my-project
@@ -68,7 +68,7 @@ Your project files.
 
 ![Tree](images/tree.png)
 
-Now create a new GitHub repository for your mkdocs project and push the changes.
+Now create a new GitHub repository for your MkDocs project and push the changes.
 
 ## Create the CodePipeline to deploy changes automatically to your Amazon S3 Website
 
@@ -86,4 +86,4 @@ Wait until stack status is **CREATE_COMPLETE** and go to the AWS CodePipeline co
 
 In the **Outputs** of your CloudFormation Stack you will find the link to your Website.
 
-![Mkdocs project deployed](images/mkdocs-project.png)
+![MkDocs project deployed](images/mkdocs-project.png)
