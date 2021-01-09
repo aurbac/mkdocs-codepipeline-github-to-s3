@@ -1,5 +1,5 @@
 {
-    "Description": "CodePipeline to Deploy Mkdocs project from GitHub to Amazon S3 - By Uriel Ramirez",
+    "Description": "AWS CodePipeline to Deploy Mkdocs project from GitHub to Amazon S3 Bucket - By Uriel Ramirez",
     "Outputs": {
         "WebsiteURL": {
             "Value": {

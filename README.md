@@ -14,25 +14,21 @@ https://help.github.com/en/articles/creating-a-personal-access-token-for-the-com
 
 ## Create you first Mkdocs project
 
-Install the mkdocs and material design package using pip.
+Install the [MkDocs](https://www.mkdocs.org/) and [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) design package using pip.
 
 ``` bash
 sudo pip install mkdocs
 sudo pip install mkdocs-material
 ```
 
-https://www.mkdocs.org
-
-https://squidfunk.github.io/mkdocs-material/
-
-Create the Mkdocs project.
+Create the new Mkdocs project.
 
 ``` bash
 mkdocs new my-project
 cd my-project
 ```
 
-Append the following line to your project's mkdocs.yml.
+Append the following line to your project's **mkdocs.yml**.
 
 ``` yml
 theme:
@@ -62,7 +58,6 @@ phases:
   post_build:
     commands:
       # Post Build
-
 artifacts:
   base-directory: 'site*'
   files:
